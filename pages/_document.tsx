@@ -6,20 +6,20 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta charSet="UTF-8" />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
-          <link href="https://calendly.com/assets/external/widget.css" rel="stylesheet" />
-
-          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=xQOlW6Mxj2" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=xQOlW6Mxj2" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=xQOlW6Mxj2" />
-          <link rel="manifest" href="/site.webmanifest?v=xQOlW6Mxj2" />
-          <link rel="mask-icon" href="/safari-pinned-tab.svg?v=xQOlW6Mxj2" color="#086efa" />
-          <link rel="shortcut icon" href="/favicon.ico?v=xQOlW6Mxj2" />
-          <meta name="msapplication-TileColor" content="#086efa" />
-          <meta name="theme-color" content="#ffffff" />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=optional"
+          />
+          <link
+            href="https://calendly.com/assets/external/widget.css"
+            rel="stylesheet"
+          />
+          <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⬛</text></svg>"
+          />
         </Head>
-        <body className="fade">
+        <body>
           <Main />
           <NextScript />
         </body>
