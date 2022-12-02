@@ -13,7 +13,7 @@ export default function Home({ domains }) {
 
   return (
     <div className="h-screen flex">
-      <div className="fade container m-auto">
+      <div className="fade p-[30px] sm:p-[120px] m-auto">
         <a
           href="https://yanyuk.com/"
           className="inline-block w-[100px] h-[42px] mb-[36px] mr-[18px] indent-[-9999px] bg-[url('/yanyuk.png')] bg-contain bg-left bg-no-repeat"
