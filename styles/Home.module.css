@@ -1,30 +1,14 @@
-.yanyuk {
-  display: inline-block;
-  width: 100px;
-  height: 42px;
-  margin: 0 18px 36px 0;
-  text-indent: -9999px;
-  background-image: url("/yanyuk.png");
-  background-size: 100px;
-  background-position: left center;
-  background-repeat: no-repeat;
-}
-
 .domain {
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .domain:hover {
   color: #086efa;
-}
-
-.container {
-  padding: 120px;
 }
 
 .socialLinks {
@@ -43,26 +27,26 @@
   position: relative;
   display: block;
   padding: 4px 0;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .socialLinks li a:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 1px;
-  background: rgba(0,0,0,0.1);
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .socialLinks li a.one:hover {

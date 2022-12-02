@@ -12,9 +12,12 @@ export default function Home({ domains }) {
   }, [setCurrentDomain]);
 
   return (
-    <>
-      <div className={classNames(styles.container, "fade")}>
-        <a href="https://yanyuk.com/" className={styles.yanyuk}>
+    <div className="h-screen flex">
+      <div className="fade p-[120px] m-auto">
+        <a
+          href="https://yanyuk.com/"
+          className="inline-block w-[100px] h-[42px] mb-[36px] mr-[18px] indent-[-9999px] bg-[url('/yanyuk.png')] bg-contain bg-left bg-no-repeat"
+        >
           Yanyuk
         </a>
         <h1>Parked Domain ({currentDomain})</h1>
@@ -82,7 +85,7 @@ export default function Home({ domains }) {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }
 
@@ -116,6 +119,9 @@ export async function getServerSideProps(context) {
 
   // Dedupe domains
   domains = [...new Set(domains)];
+
+  //TODO: Remove
+  domains = [...domains, ...domains, ...domains, ...domains, ...domains];
 
   return {
     props: {
