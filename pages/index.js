@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import classNames from "../util/classNames";
 
 export default function Home({ domains }) {
@@ -20,15 +19,17 @@ export default function Home({ domains }) {
         >
           Yanyuk
         </a>
-        <h1>Parked Domain ({currentDomain})</h1>
-        <p>
+        <h1 className="mb-[7px] text-[13px] leading-[22px] font-normal">
+          Parked Domain ({currentDomain})
+        </h1>
+        <p className="w-full max-w-[600px] mb-[22px] text-black/50">
           Inquire with offer via email.
           <br />
           {showMore ? (
             <span>
               More domains below.{" "}
               <a
-                style={{ cursor: "pointer" }}
+                className="cursor-pointer relative text-black/50 no-underline transition-all duration-300 ease-in-out hover:text-[#086efa] after:content-[''] after:absolute after:-bottom-[4px] after:left-0 after:w-full after:h-[1px] after:bg-black/10 after:transition-all after:duration-300 after:ease-in-out after:hover:bg-[#086efa]"
                 onClick={() => setShowMore(!showMore)}
               >
                 Hide them
@@ -39,7 +40,7 @@ export default function Home({ domains }) {
             <span>
               View more of our domains by clicking{" "}
               <a
-                style={{ cursor: "pointer" }}
+                className="cursor-pointer relative text-black/50 no-underline transition-all duration-300 ease-in-out hover:text-[#086efa] after:content-[''] after:absolute after:-bottom-[4px] after:left-0 after:w-full after:h-[1px] after:bg-black/10 after:transition-all after:duration-300 after:ease-in-out after:hover:bg-[#086efa]"
                 onClick={() => setShowMore(!showMore)}
               >
                 here
@@ -49,34 +50,31 @@ export default function Home({ domains }) {
           )}
         </p>
         <ul
-          style={{
-            marginTop: -10,
-            visibility: showMore ? "visible" : "hidden",
-            opacity: showMore ? 1 : 0,
-            transition: showMore
-              ? "visibility 0.5s, opacity 0.5s ease-in, max-height 0.5s ease-in"
-              : "visibility 0.5s, opacity 0.5s ease-out, max-height 0.5s ease-out",
-            listStyleType: "none",
-            paddingLeft: 24,
-            overflow: "hidden",
-            maxHeight: showMore ? 1600 : 0,
-          }}
+          className={classNames(
+            "-mt-2.5 list-none pl-6 overflow-hidden",
+            showMore
+              ? "visible opacity-100 max-h-[1600px] [transition:visibility_0.5s,opacity_0.5s_ease-in,max-height_0.5s_ease-in]"
+              : "invisible opacity-0 max-h-0 transition-[visibility] [transition:visibility_0.5s,opacity_0.5s_ease-out,max-height_0.5s_ease-out]"
+          )}
         >
           {domains
             .filter((domain) => domain !== currentDomain)
             .map((domain) => (
               <li key={domain}>
-                <a href={`https://${domain}`} className={styles.domain}>
+                <a
+                  href={`https://${domain}`}
+                  className="text-black/50 no-underline transition-all duration-300 ease-in-out hover:text-[#086efa]"
+                >
                   {domain}
                 </a>
               </li>
             ))}
         </ul>
-        <ul className={styles.socialLinks}>
-          <li>
+        <ul className="mt-2.5 p-0 list-none">
+          <li className="float-left inline-block mr-[30px]">
             <a
               href="mailto:domains@yanyuk.com"
-              className={styles.one}
+              className="relative block py-[4px] text-black/50 no-underline transition-all duration-300 ease-in-out hover:text-[#086efa] after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-black/10 after:transition-all after:duration-300 after:ease-in-out after:hover:bg-[#086efa]"
               target="_blank"
               rel="noopener noreferrer"
             >

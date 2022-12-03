@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer utilities {
+  html {
+    font-family: "Roboto Mono", "Courier New", Courier, "Lucida Sans Typewriter",
+      "Lucida Typewriter", monospace;
+    font-size: 13px;
+    line-height: 22px;
+    color: #111;
+  }
+
   /* https://leerob.io/blog/how-stripe-designs-beautiful-websites */
   body {
     text-rendering: optimizeLegibility;
@@ -44,26 +52,6 @@
   }
 
   /* TODO: Legacy below; to be migrated */
-  html {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto Mono", "Courier New", Courier, "Lucida Sans Typewriter",
-      "Lucida Typewriter", monospace;
-    font-size: 13px;
-    line-height: 22px;
-    color: #111;
-    background-color: #fff;
-  }
-
-  h1 {
-    margin: 0 0 7px 0;
-    font-size: 13px;
-    line-height: 22px;
-    font-weight: normal;
-  }
-
   p {
     width: 100%;
     max-width: 600px;
