@@ -7,10 +7,6 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=optional"
-          />
-          <link
             href="https://calendly.com/assets/external/widget.css"
             rel="stylesheet"
           />

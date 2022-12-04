@@ -4,8 +4,6 @@
 
 @layer utilities {
   html {
-    font-family: "Roboto Mono", "Courier New", Courier, "Lucida Sans Typewriter",
-      "Lucida Typewriter", monospace;
     font-size: 13px;
     line-height: 22px;
     color: #111;

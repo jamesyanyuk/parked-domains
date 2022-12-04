@@ -1,10 +1,24 @@
 import Head from "next/head";
 import Script from "next/script";
+import { Roboto_Mono } from "@next/font/google";
 import "../styles/globals.css";
+
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  variable: "--font-roboto-mono",
+});
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <style jsx global>
+        {`
+          :root {
+            --font-roboto-mono: ${robotoMono.style.fontFamily};
+          }
+        `}
+      </style>
+
       <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" />
       <Script
         src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"
